@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- reset.css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- mobiles.css -->
+    <link rel="stylesheet" href="./css/mobiles.css" />
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--icon-->
+
+    <link rel="icon" href="./images/icon.svg" class="icon" />
+    <title>contact</title>
+  </head>
+  <body>
+    <div class="conteiner">
+      <!--header-->
+
+      <header>
+        <img src="./images/burger-menu.svg" alt="burger" class="burger" />
+        <img src="./images/xmark.svg" alt="xmark" class="xmark" />
+        <nav class="menu">
+          <ul class="menu-items">
+            <li><a href="./index.html" class="menu-items-inactive">Home</a></li>
+            <li>
+              <a href="./artworks.html" class="menu-items-inactive">Artworks</a>
+            </li>
+            <li>
+              <a href="./contact.html" class="menu-items-active">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="./index.html">
+          <img src="./images/icon.svg" alt="main-icon" class="icon" />
+        </a>
+        <a href="./index.html">
+          <img
+            src="./images/icon-320.svg"
+            alt="main-icon-320"
+            class="icon-320"
+          />
+        </a>
+        <div class="header-right-side">
+          <a href="#" class="sign-in">Sign In</a>
+          <button class="header-back-button">
+            <img src="./images/back-icon.svg" alt="back" />
+          </button>
+          <button class="header-buy-button">
+            <img src="./images/buy-icon.svg" alt="buy" />
+          </button>
+        </div>
+      </header>
+
+      <div class="contact-container">
+        <!--contact-section for form and map section-->
+        <section class="contact-section">
+          <!--form-section-->
+          <section class="form-section">
+            <h1>Get in Touch</h1>
+            <!--form-->
+            <form>
+              <div class="inputs-container">
+                <input type="text" placeholder="Full Name" name="name" />
+                <input type="email" placeholder="Email" name="email" />
+              </div>
+              <div class="textarea-container">
+                <textarea
+                  placeholder="Message"
+                  id="textarea"
+                  name="message"
+                ></textarea>
+              </div>
+              <button class="submit-button">SUBMIT</button>
+            </form>
+          </section>
+
+          <!--map-section-->
+          <section class="map-section">
+            <address>
+              <a href="tel:599215030">
+                <img src="./images/contact-mobile-icon.svg" alt="call" />
+              </a>
+              <a href="mailto:example.gmail.com">
+                <img src="./images/contact-email-icon.svg" alt="mail" />
+              </a>
+              <a
+                href="https://maps.app.goo.gl/BeFJoc3S5yEfdjGi7"
+                target="blank"
+              >
+                <img src="./images/contact-map-icon.svg" alt="location" />
+              </a>
+            </address>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.9115975853365!2d44.79332877607553!3d41.700844071261805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cdda1d2d4d7%3A0xe30fd49502a2dd79!2z4YOX4YOR4YOY4YOa4YOY4YOh4YOY4YOhIOGDneGDnuGDlOGDoOGDmOGDoeGDkCDhg5Phg5Ag4YOR4YOQ4YOa4YOU4YOi4YOY4YOhIOGDl-GDlOGDkOGDouGDoOGDmA!5e0!3m2!1ska!2sge!4v1764702077765!5m2!1ska!2sge"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </section>
+        </section>
+      </div>
+
+      <!--footer-->
+      <footer>
+        <div class="social-media-box">
+          <p class="help-settings">Help</p>
+          <p class="help-settings">Help Centre</p>
+          <p class="help-settings">Privacy Settings</p>
+          <ul class="social-media">
+            <li>
+              <a href="https://www.youtube.com/" target="_blank">
+                <img src="./images/youtube.svg" alt="logo-youtube" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="./images/instagram.svg" alt="logo-instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank">
+                <img src="./images/facebook.svg" alt="logo-facebook" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="./index.html">
+          <img src="./images/icon.svg" alt="main-icon" class="icon-header" />
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>
