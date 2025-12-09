@@ -5,7 +5,7 @@ body {
 .conteiner {
   width: min(100%, 1440px);
   margin: auto;
-  padding-top: 98.76px;
+  padding-top: 78px;
 }
 /******header*****/
 header {
@@ -64,6 +64,7 @@ header {
   color: #ffffff;
 }
 .header-buy-button,
+.logout-button,
 .header-back-button {
   background-color: #402101;
   border: none;
@@ -74,6 +75,22 @@ header {
 }
 .header-buy-button:hover {
   background-color: #6a3f20;
+}
+.logout-text {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+.logout-button {
+  display: none;
+}
+.logout-text {
+  display: inline-block;
+}
+.logout-button img {
+  width: 20px;
+  height: 20px;
 }
 
 /*****home-cover-section*****/
@@ -136,15 +153,24 @@ header {
 }
 .home-product-container {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
   gap: 24px;
+  margin: 0 auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 8px;
+  scroll-snap-type: x mandatory;
 }
 .home-product-card {
   background-color: #ffffff;
   border-radius: 8px;
-  width: 326px;
-  height: 314px;
+  width: 100%;
+  max-width: 326px;
+  min-height: 314px;
+  max-height: 314px;
+  flex: 0 0 300px;
+  scroll-snap-align: start;
   display: flex;
   flex-direction: column;
   row-gap: 16px;
@@ -307,6 +333,9 @@ footer ul img {
   letter-spacing: 0%;
   color: #ffffff;
   margin-bottom: 72px;
+}
+.mobile-sort-button {
+  display: none;
 }
 .sort-button {
   width: 160;
@@ -536,7 +565,7 @@ address {
   column-gap: 72px;
 }
 iframe {
-  width: 494px;
+  width: 100%;
   height: 264px;
   border-radius: 10px;
 }

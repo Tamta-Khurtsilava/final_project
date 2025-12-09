@@ -1,243 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- reset.css -->
-    <link rel="stylesheet" href="./css/reset.css" />
-    <!-- style.css -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- mobiles.css -->
-    <link rel="stylesheet" href="./css/mobiles.css" />
-    <!--font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
 
-    <!--icon-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- reset.css -->
+  <link rel="stylesheet" href="./css/reset.css" />
+  <!-- style.css -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- mobiles.css -->
+  <link rel="stylesheet" href="./css/mobiles.css" />
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet" />
 
-    <link rel="icon" href="./images/icon.svg" class="icon" />
-    <title>artworks</title>
-  </head>
-  <body>
-    <div class="conteiner">
-      <!--header-->
+  <!--icon-->
 
-      <header>
-        <img src="./images/burger-menu.svg" alt="burger" class="burger" />
-        <img src="./images/xmark.svg" alt="xmark" class="xmark" />
-        <nav class="menu">
-          <ul class="menu-items">
-            <li><a href="./index.html" class="menu-items-inactive">Home</a></li>
-            <li>
-              <a href="./artworks.html" class="menu-items-active">Artworks</a>
-            </li>
-            <li>
-              <a href="./contact.html" class="menu-items-inactive">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <a href="./index.html">
-          <img src="./images/icon.svg" alt="main-icon" class="icon" />
-        </a>
-        <a href="./index.html">
-          <img
-            src="./images/icon-320.svg"
-            alt="main-icon-320"
-            class="icon-320"
-          />
-        </a>
-        <div class="header-right-side">
-          <a href="#" class="sign-in">Sign In</a>
-          <button class="header-back-button">
-            <img src="./images/back-icon.svg" alt="back" />
-          </button>
-          <button class="header-buy-button">
-            <img src="./images/buy-icon.svg" alt="buy" />
-          </button>
-        </div>
-      </header>
+  <link rel="icon" href="./images/icon.svg" class="icon" />
+  <title>artworks</title>
+</head>
 
-      <!--section-->
-      <section class="artworks-section">
-        <section class="artworks-title-sort-section">
+<body>
+  <div class="conteiner">
+    <!--header-->
+
+    <header>
+      <img src="./images/burger-menu.svg" alt="burger" class="burger" />
+      <img src="./images/xmark.svg" alt="xmark" class="xmark" />
+      <nav class="menu">
+        <ul class="menu-items">
+          <li><a href="./index.html" class="menu-items-inactive">Home</a></li>
+          <li>
+            <a href="./artworks.html" class="menu-items-active">Artworks</a>
+          </li>
+          <li>
+            <a href="./contact.html" class="menu-items-inactive">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="./index.html">
+        <img src="./images/icon.svg" alt="main-icon" class="icon" />
+      </a>
+      <a href="./index.html">
+        <img src="./images/icon-320.svg" alt="main-icon-320" class="icon-320" />
+      </a>
+      <div class="header-right-side">
+        <a href="#" class="logout-text">Logout</a>
+        <button class="logout-button" aria-label="Logout">
+          <img src="./images/back-icon.svg" alt="logout" />
+        </button>
+        <button class="header-back-button" aria-label="Back">
+          <img src="./images/back-icon.svg" alt="back" />
+        </button>
+        <button class="header-buy-button" aria-label="Cart">
+          <img src="./images/buy-icon.svg" alt="buy" />
+        </button>
+      </div>
+    </header>
+
+    <!--section-->
+    <section class="artworks-section">
+      <div class="artworks-title-sort-section">
+        <div>
           <h1 class="artworks-section-title">SHOP ALL / artworks</h1>
-          <button class="sort-button">
+        </div>
+        <button class="sort-button">
+          <a href="#">
+            <img src="./images/sort-button.svg" alt="sort-button" />
+          </a>
+        </button>
+        <button class="mobile-sort-button">
+          <a href="#">
+            <img src="./images/mobile-sort.svg" alt="sort-button" />
+          </a>
+        </button>
+      </div>
+      <section class="cards-section">
+        <article class="artworks-card-box">
+          <img src="./images/artwork-1-9.png" alt="artwork1" class="artworks-card-image" />
+          <p class="artworks-card-title">Product Name</p>
+          <div class="price-buy">
+            <p class="artworks-price">$40.00</p>
             <a href="#">
-              <img src="./images/sort-button.svg" alt="sort-button" />
+              <img src="./images/artwork-buy-icon.svg" alt="artworks-buy-icon" />
             </a>
-          </button>
-        </section>
-        <section class="cards-section">
-          <article class="artworks-card-box">
-            <img
-              src="./images/artwork-1-9.png"
-              alt="artwork1"
-              class="artworks-card-image"
-            />
-            <p class="artworks-card-title">Product Name</p>
-            <div class="price-buy">
-              <p class="artworks-price">$40.00</p>
-              <a href="#">
-                <img
-                  src="./images/artwork-buy-icon.svg"
-                  alt="artworks-buy-icon"
-                />
-              </a>
-            </div>
-          </article>
-          <article class="artworks-card-box">
-            <img
-              src="./images/artwork-2.png"
-              alt="artwork1"
-              class="artworks-card-image"
-            />
-            <p class="artworks-card-title">Product Name</p>
-            <div class="price-buy">
-              <p class="artworks-price">$40.00</p>
-              <a href="#">
-                <img
-                  src="./images/artwork-buy-icon.svg"
-                  alt="artworks-buy-icon"
-                />
-              </a>
-            </div>
-          </article>
-          <article class="artworks-card-box">
-            <img
-              src="./images/artwork-3.png"
-              alt="artwork1"
-              class="artworks-card-image"
-            />
-            <p class="artworks-card-title">Product Name</p>
-            <div class="price-buy">
-              <p class="artworks-price">$40.00</p>
-              <a href="#">
-                <img
-                  src="./images/artwork-buy-icon.svg"
-                  alt="artworks-buy-icon"
-                />
-              </a>
-            </div>
-          </article>
-          <article class="artworks-card-box">
-            <img
-              src="./images/artwork-4.png"
-              alt="artwork1"
-              class="artworks-card-image"
-            />
-            <p class="artworks-card-title">Product Name</p>
-            <div class="price-buy">
-              <p class="artworks-price">$40.00</p>
-              <a href="#">
-                <img
-                  src="./images/artwork-buy-icon.svg"
-                  alt="artworks-buy-icon"
-                />
-              </a>
-            </div>
-          </article>
-          <article class="artworks-card-box">
-            <img
-              src="./images/artwork-5.png"
-              alt="artwork1"
-              class="artworks-card-image"
-            />
-            <p class="artworks-card-title">Product Name</p>
-            <div class="price-buy">
-              <p class="artworks-price">$40.00</p>
-              <a href="#">
-                <img
-                  src="./images/artwork-buy-icon.svg"
-                  alt="artworks-buy-icon"
-                />
-              </a>
-            </div>
-          </article>
-          <article class="artworks-card-box">
-            <img
-              src="./images/artwork-6.png"
-              alt="artwork1"
-              class="artworks-card-image"
-            />
-            <p class="artworks-card-title">Product Name</p>
-            <div class="price-buy">
-              <p class="artworks-price">$40.00</p>
-              <a href="#">
-                <img
-                  src="./images/artwork-buy-icon.svg"
-                  alt="artworks-buy-icon"
-                />
-              </a>
-            </div>
-          </article>
-          <article class="artworks-card-box">
-            <img
-              src="./images/artwork-7.png"
-              alt="artwork1"
-              class="artworks-card-image"
-            />
-            <p class="artworks-card-title">Product Name</p>
-            <div class="price-buy">
-              <p class="artworks-price">$40.00</p>
-              <a href="#">
-                <img
-                  src="./images/artwork-buy-icon.svg"
-                  alt="artworks-buy-icon"
-                />
-              </a>
-            </div>
-          </article>
-          <article class="artworks-card-box">
-            <img
-              src="./images/artwork-8.png"
-              alt="artwork1"
-              class="artworks-card-image"
-            />
-            <p class="artworks-card-title">Product Name</p>
-            <div class="price-buy">
-              <p class="artworks-price">$40.00</p>
-              <a href="#">
-                <img
-                  src="./images/artwork-buy-icon.svg"
-                  alt="artworks-buy-icon"
-                />
-              </a>
-            </div>
-          </article>
-          <article class="artworks-card-box">
-            <img
-              src="./images/artwork-1-9.png"
-              alt="artwork1"
-              class="artworks-card-image"
-            />
-            <p class="artworks-card-title">Product Name</p>
-            <div class="price-buy">
-              <p class="artworks-price">$40.00</p>
-              <a href="#">
-                <img
-                  src="./images/artwork-buy-icon.svg"
-                  alt="artworks-buy-icon"
-                />
-              </a>
-            </div>
-          </article>
-        </section>
+          </div>
+        </article>
+        <article class="artworks-card-box">
+          <img src="./images/artwork-2.png" alt="artwork1" class="artworks-card-image" />
+          <p class="artworks-card-title">Product Name</p>
+          <div class="price-buy">
+            <p class="artworks-price">$40.00</p>
+            <a href="#">
+              <img src="./images/artwork-buy-icon.svg" alt="artworks-buy-icon" />
+            </a>
+          </div>
+        </article>
+        <article class="artworks-card-box">
+          <img src="./images/artwork-3.png" alt="artwork1" class="artworks-card-image" />
+          <p class="artworks-card-title">Product Name</p>
+          <div class="price-buy">
+            <p class="artworks-price">$40.00</p>
+            <a href="#">
+              <img src="./images/artwork-buy-icon.svg" alt="artworks-buy-icon" />
+            </a>
+          </div>
+        </article>
+        <article class="artworks-card-box">
+          <img src="./images/artwork-4.png" alt="artwork1" class="artworks-card-image" />
+          <p class="artworks-card-title">Product Name</p>
+          <div class="price-buy">
+            <p class="artworks-price">$40.00</p>
+            <a href="#">
+              <img src="./images/artwork-buy-icon.svg" alt="artworks-buy-icon" />
+            </a>
+          </div>
+        </article>
+        <article class="artworks-card-box">
+          <img src="./images/artwork-5.png" alt="artwork1" class="artworks-card-image" />
+          <p class="artworks-card-title">Product Name</p>
+          <div class="price-buy">
+            <p class="artworks-price">$40.00</p>
+            <a href="#">
+              <img src="./images/artwork-buy-icon.svg" alt="artworks-buy-icon" />
+            </a>
+          </div>
+        </article>
+        <article class="artworks-card-box">
+          <img src="./images/artwork-6.png" alt="artwork1" class="artworks-card-image" />
+          <p class="artworks-card-title">Product Name</p>
+          <div class="price-buy">
+            <p class="artworks-price">$40.00</p>
+            <a href="#">
+              <img src="./images/artwork-buy-icon.svg" alt="artworks-buy-icon" />
+            </a>
+          </div>
+        </article>
+        <article class="artworks-card-box">
+          <img src="./images/artwork-7.png" alt="artwork1" class="artworks-card-image" />
+          <p class="artworks-card-title">Product Name</p>
+          <div class="price-buy">
+            <p class="artworks-price">$40.00</p>
+            <a href="#">
+              <img src="./images/artwork-buy-icon.svg" alt="artworks-buy-icon" />
+            </a>
+          </div>
+        </article>
+        <article class="artworks-card-box">
+          <img src="./images/artwork-8.png" alt="artwork1" class="artworks-card-image" />
+          <p class="artworks-card-title">Product Name</p>
+          <div class="price-buy">
+            <p class="artworks-price">$40.00</p>
+            <a href="#">
+              <img src="./images/artwork-buy-icon.svg" alt="artworks-buy-icon" />
+            </a>
+          </div>
+        </article>
+        <article class="artworks-card-box">
+          <img src="./images/artwork-1-9.png" alt="artwork1" class="artworks-card-image" />
+          <p class="artworks-card-title">Product Name</p>
+          <div class="price-buy">
+            <p class="artworks-price">$40.00</p>
+            <a href="#">
+              <img src="./images/artwork-buy-icon.svg" alt="artworks-buy-icon" />
+            </a>
+          </div>
+        </article>
+      </section>
 
-        <div class="paging-section">
-    <a href="#" class="page-button"><</a>
-    <a href="#" class="page-button active">1</a>
-    <a href="#" class="page-button">2</a>
-    <a href="#" class="page-button">3</a>
-    <a href="#" class="page-button">4</a>
-    <span class="dots">...</span>
-    <a href="#" class="page-button">17</a>
-    <a href="#" class="page-button">></a>
-</div>
-        <!-- <section class="page-button-section">
+      <div class="paging-section">
+        <a href="#" class="page-button">
+          < </a>
+            <a href="#" class="page-button active">1</a>
+            <a href="#" class="page-button">2</a>
+            <a href="#" class="page-button">3</a>
+            <a href="#" class="page-button">4</a>
+            <span class="dots">...</span>
+            <a href="#" class="page-button">17</a>
+            <a href="#" class="page-button">></a>
+      </div>
+      <!-- <section class="page-button-section">
           <button class="page-button">
             <a href="#">
               <p class="page-number"><</p>
@@ -280,78 +225,62 @@
               <img src="./images/page-button-2.svg" alt="page-button-2" />
             </a>
           </button> -->
-        </section>
-      </section>
+    </section>
+    </section>
 
-      <!--footer-->
-      <footer>
-        <!--footer-social-media-container-->
+    <!--footer-->
+    <footer>
+      <!--footer-social-media-container-->
 
-        <ul>
-          <li class="footer-social-media-container">
-            <a href="#">Help</a>
-          </li>
-          <li class="footer-social-media-container">
-            <a href="#">Help Centre</a>
-          </li>
-          <li class="footer-social-media-container">
-            <a href="#">Privacy Settings</a>
-          </li>
-          <li class="social-media-icon">
-            <a href="https://www.youtube.com/" target="_blank">
-              <img src="./images/youtube.svg" alt="logo-youtube" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/" target="_blank">
-              <img src="./images/instagram.svg" alt="logo-instagram" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/" target="_blank">
-              <img src="./images/facebook.svg" alt="logo-facebook" />
-            </a>
-          </li>
-        </ul>
-        <a href="./index.html">
-          <img src="./images/icon.svg" alt="main-icon" class="icon-header" />
-        </a>
+      <ul>
+        <li class="footer-social-media-container">
+          <a href="#">Help</a>
+        </li>
+        <li class="footer-social-media-container">
+          <a href="#">Help Centre</a>
+        </li>
+        <li class="footer-social-media-container">
+          <a href="#">Privacy Settings</a>
+        </li>
+        <li class="social-media-icon">
+          <a href="https://www.youtube.com/" target="_blank">
+            <img src="./images/youtube.svg" alt="logo-youtube" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="./images/instagram.svg" alt="logo-instagram" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="./images/facebook.svg" alt="logo-facebook" />
+          </a>
+        </li>
+      </ul>
+      <a href="./index.html">
+        <img src="./images/icon.svg" alt="main-icon" class="icon-header" />
+      </a>
 
-        <!--footer-call-email-address-container"-->
+      <!--footer-call-email-address-container"-->
 
-        <div class="footer-call-email-address-container">
-          <address>
-            <a
-              href="tel:599215030"
-              target="_blank"
-              class="footer-call-email-address"
-            >
-              <img src="./images/footer-call-icon.svg" alt="footer-call" />+123
-              45 67 89
-            </a>
-            <a
-              href="mailto:example@gmail.com"
-              target="_blank"
-              class="footer-call-email-address"
-            >
-              <img
-                src="./images/footer-email-icon.svg"
-                alt="footer-email"
-              />example@mail.com
-            </a>
-            <a
-              href="https://maps.app.goo.gl/Z12BwmY4gpFcwLrC8"
-              target="_blank"
-              class="footer-call-email-address"
-            >
-              <img
-                src="./images/footer-address-icon.svg"
-                alt="footer-address"
-              />Rustaveli avenue, 30
-            </a>
-          </address>
-        </div>
-      </footer>
-    </div>
-  </body>
+      <div class="footer-call-email-address-container">
+        <address>
+          <a href="tel:599215030" target="_blank" class="footer-call-email-address">
+            <img src="./images/footer-call-icon.svg" alt="footer-call" />+123
+            45 67 89
+          </a>
+          <a href="mailto:example@gmail.com" target="_blank" class="footer-call-email-address">
+            <img src="./images/footer-email-icon.svg" alt="footer-email" />example@mail.com
+          </a>
+          <a href="https://maps.app.goo.gl/Z12BwmY4gpFcwLrC8" target="_blank" class="footer-call-email-address">
+            <img src="./images/footer-address-icon.svg" alt="footer-address" />Rustaveli avenue, 30
+          </a>
+        </address>
+      </div>
+    </footer>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
 </html>
