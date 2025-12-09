@@ -2,7 +2,7 @@
 @media (max-width: 320px) {
   /******header*****/
   header {
-    padding-inline: 16px;
+    padding: 16px 8px;
   }
   .menu-items,
   .icon,
@@ -44,4 +44,5 @@
     background-size: cover;
     background-position: center;
   }
+  
 }
